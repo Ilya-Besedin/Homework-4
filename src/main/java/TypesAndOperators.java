@@ -47,11 +47,11 @@ public class TypesAndOperators {
         int cInt = 1000;
         long dLong = 10000L;
         //short z = aByte ^ cInt; сравнение с short z приведет к ошибке тк 10 в степени 100 больше максимального значения short
-        System.out.println(aByte - bShort);
-        System.out.println(aByte + aByte);
-        System.out.println(bShort * bShort);
-        System.out.println(bShort / aByte);
-        System.out.println(bShort + cInt - bShort % aByte);
+        System.out.println(aByte - bShort); //-90
+        System.out.println(aByte + aByte); //20
+        System.out.println(bShort * bShort); //10000
+        System.out.println(bShort / aByte); //10
+        System.out.println(bShort + cInt - bShort % aByte); //1100
         //System.out.println(z == bShort);
         System.out.println(cInt <= aByte * aByte); //true
         System.out.println(aByte < cInt); //true
@@ -72,8 +72,7 @@ public class TypesAndOperators {
         char g = 'H', h = '1';
         System.out.println(g + h); //ASCII CHAR+DEC -> H=72 + 1=49 = 121
 
-
-        System.out.println(aByte + bShort); //10 + 100 = 110. Результат выполнения = 111. Почему?
+        System.out.println(aByte + bShort + "\t| 10 + 100 = 110. Результат выполнения = 111. Почему?");
 
         boolean cat = true;
         boolean dog = cat;
